@@ -15,12 +15,7 @@ function CopyLink({ link }) {
   };
 
   return (
-    <img
-      className="copy"
-      src={copyIcon}
-      alt="Copy link"
-      onClick={handleCopy}
-    />
+    <img className="copy" src={copyIcon} alt="Copy link" onClick={handleCopy} />
   );
 }
 

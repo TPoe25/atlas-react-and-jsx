@@ -1,6 +1,7 @@
 import Header from "./components/Header.jsx";
 import Section from "./components/Section.jsx";
 import HelpfulResource from "./components/HelpfulResource.jsx";
+import AboutMe from "./components/AboutMe.jsx";
 
 function App() {
   return (
@@ -9,9 +10,9 @@ function App() {
 
       <Section title="What is react?">
         <p>
-          React is a JavaScript library for building user interfaces. It lets you
-          create reusable components and efficiently update the UI when your data
-          changes.
+          React is a JavaScript library for building user interfaces. It lets
+          you create reusable components and efficiently update the UI when your
+          data changes.
         </p>
       </Section>
 
@@ -39,6 +40,9 @@ function App() {
           link="https://react.dev/learn"
         />
       </Section>
+
+      <AboutMe />
+
     </div>
   );
 }
