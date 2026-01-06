@@ -1,17 +1,13 @@
-import react from 'react';
-import 'src/asset/header.jsx';
-import './Header.css';
-import SocialLinks from './SocialLinks.jsx';
-import Greeting from './Greeting.jsx';
+import Greeting from "./Greeting.jsx";
+import SocialLinks from "./SocialLinks.jsx";
 
-const Header = () => {
+function Header() {
   return (
     <header className="header">
-        <h1>Welcome to Atlas!</h1>
-        <Greeting />
-        <SocialLinks />
+      <Greeting />
+      <SocialLinks />
     </header>
-    );
-};
-const App = () => { return <Header />; }
-export default App;
+  );
+}
+
+export default Header;

@@ -1,20 +1,22 @@
-import React from 'react';
-import './Greeting.css';
+import day from '../assets/day.svg';
+import evening from '../assets/evening.svg';
+import night from '../assets/night.svg';
 
 const Greeting = () => {
   const hour = new Date().getHours();
+
   let text = 'Good Night!';
-  let img = 'src/assets/night.svg';
+  let img = night;
 
   if (hour >= 6 && hour < 12) {
     text = 'Good Morning!';
-    img = 'src/assets/day.svg';
+    img = day;
   } else if (hour >= 12 && hour < 18) {
     text = 'Good Afternoon!';
-    img = 'src/assets/day.svg';
+    img = day;
   } else if (hour >= 18 && hour < 22) {
     text = 'Good Evening!';
-    img = 'src/assets/evening.svg';
+    img = evening;
   }
 
   return (
